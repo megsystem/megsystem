@@ -1,15 +1,24 @@
-# Hi there, I'm megsystem 🙂
+# Hi there! 😁
 
-🤓 I'm a novice developer 😎
+I'm megsystem 🤓, 
+<br>a novice developer 😎
 
+---
 📝 I'm programming in:
-- javascript
-- c++
-- c#
+
+Language | Currently Working | Skills
+--- | --- | ---
+JavaScript | Yes | 54%
+C++ | No* | 14%
+C# | Not now | 26%
+Java | No** | 6%
+
+\* (possible return in a few months)
+<br>
+** (no return/posting of projects)
 
 ---
 
 ### Page counter
 <img src="https://profile-counter.glitch.me/megsystem/count.svg" />
 
----
