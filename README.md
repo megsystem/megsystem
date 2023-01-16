@@ -2,7 +2,7 @@
 
 I'm megsystem 🤓, 
 <br>a novice developer! 😎
-<br>[--> This is my main site🔰 <--](giovannigiannone.now.sh)
+<br>[--> This is my main site🔰 <--](https://giovannigiannone.now.sh/)
 
 ---
 📝 I'm programming in:
