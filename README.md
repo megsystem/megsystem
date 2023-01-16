@@ -1,7 +1,8 @@
 # Hi there! 😁
 
 I'm megsystem 🤓, 
-<br>a novice developer 😎
+<br>a novice developer! 😎
+<br>[--> This is my main site🔰 <--](giovannigiannone.now.sh)
 
 ---
 📝 I'm programming in:
