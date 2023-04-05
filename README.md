@@ -2,7 +2,7 @@
 
 I'm megsystem 🤓, 
 <br>a novice developer! 😎
-<br>[--> This is my main site🔰 <--](https://giovannigiannone.now.sh/)
+<br>[--> Main site🔰 <-- [REMOVED]](https://en.wikipedia.org/wiki/HTTP_404)
 
 ---
 📝 I'm programming in:
