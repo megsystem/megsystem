@@ -1,10 +1,5 @@
-# Hi there! 😁
+# Skills👌
 
-I'm megsystem 🤓, 
-<br>a novice developer! 😎
-<br>[--> Main site🔰 <-- [REMOVED]](https://en.wikipedia.org/wiki/HTTP_404)
-
----
 📝 I'm programming in:
 
 Language | Currently Working | Skills
