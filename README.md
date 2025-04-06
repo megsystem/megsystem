@@ -16,10 +16,8 @@ Below is a summary of my current programming language expertise:
 > 📝 *C++ might be resumed in a few months.*  
 > ⏳ **Java** is currently on hold for project postings.
 
----
+#
 
-### Page Counter  
-
-![👀 Profile Counter](https://profile-counter.glitch.me/megsystem/count.svg)
+![👀 Profile Counter](https://komarev.com/ghpvc/?username=megsystem&style=for-the-badge&color=red)
 
 </div>
