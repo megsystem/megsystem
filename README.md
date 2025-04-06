@@ -13,8 +13,8 @@ Below is a summary of my current programming language expertise:
 | 🎮 **C#**        | ✅ Yes               | ⚙️ 36%            |
 | ☕ **Java**       | ❌ No**              | 🌱 6%             |
 
-> 📝 *C++ might be resumed in a few months.*  
-> ⏳ **Java** is currently on hold for project postings.
+> 📝 ***C++** might be resumed in a few months.*  
+> ⏳ ***Java** is currently on hold for project postings.*
 
 #
 
