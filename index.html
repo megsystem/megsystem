@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skills Overview</title>
+  <!-- Ensures proper mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    /* Base reset and body styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #1e1e1e;
+      font-family: sans-serif;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Container with gray border */
+    .container {
+      max-width: 900px;
+      width: 100%;
+      border: 2px solid #4a4a4a; /* Gray border */
+      border-radius: 5px;
+      padding: 20px;
+      background-color: #2c2c2c;
+      text-align: center;
+      margin: auto;
+    }
+
+    /* Banner image */
+    .banner {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Headings */
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    /* Table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    thead th {
+      background-color: #3a3a3a;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #4a4a4a;
+      text-align: center;
+    }
+    th {
+      font-weight: bold;
+    }
+
+    /* Blockquotes/notes */
+    blockquote {
+      font-style: italic;
+      margin: 10px auto;
+      max-width: 80%;
+      color: #c7c7c7;
+    }
+
+    /* Make sure table scrolls on smaller screens if needed */
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    /* Responsive heading sizing */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      th, td {
+        padding: 8px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Page Banner -->
+    <img
+      class="banner"
+      src="https://raw.githubusercontent.com/megsystem/megsystem/refs/heads/main/banner.png"
+      alt="Page Banner"
+    />
+
+    <h1>🚀 Skills Overview 👌</h1>
+    <p>Below is a summary of my current programming language expertise:</p>
+
+    <!-- Table Wrapper for responsiveness -->
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>🖥️ <strong>Language</strong></th>
+            <th>🔄 <strong>Currently Active</strong></th>
+            <th>📊 <strong>Proficiency</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>⚡ <strong>JavaScript</strong></td>
+            <td>✅ Yes</td>
+            <td>🔥 44%</td>
+          </tr>
+          <tr>
+            <td>💻 <strong>C++</strong></td>
+            <td>❌ No*</td>
+            <td>🏗️ 14%</td>
+          </tr>
+          <tr>
+            <td>🎮 <strong>C#</strong></td>
+            <td>✅ Yes</td>
+            <td>⚙️ 36%</td>
+          </tr>
+          <tr>
+            <td>☕ <strong>Java</strong></td>
+            <td>❌ No**</td>
+            <td>🌱 6%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <blockquote>
+      📝 <strong>C++</strong> might be resumed in a few months.<br />
+      ⏳ <strong>Java</strong> is currently on hold for project postings.
+    </blockquote>
+
+    <hr style="margin: 30px 0; border-color: #4a4a4a;" />
+
+    <!-- Profile Counter -->
+    <p>
+      <img
+        src="https://komarev.com/ghpvc/?username=megsystem&style=for-the-badge&color=red"
+        alt="👀 Profile Counter"
+      />
+    </p>
+  </div>
+</body>
+</html>
