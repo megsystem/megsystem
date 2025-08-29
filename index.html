@@ -94,6 +94,107 @@
         font-size: 0.9rem;
       }
     }
+
+    /* Dark theme button */
+    .button-theme {
+      width: 100%;
+      padding: 14px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: center;
+      background: #2b2b2b; /* dark background */
+      border: 3px solid #444; /* default border */
+      border-radius: 12px; /* curved border */
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+      z-index: 1; /* make sure text stays on top */
+
+      /* Rainbow animated text */
+      color: transparent;
+      background-image: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet,
+        red
+      );
+      background-size: 400% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: rainbowText 12s ease-in-out infinite;
+    }
+
+    /* Smooth rainbow text animation */
+    @keyframes rainbowText {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Hover rainbow border using ::before (separate layer) */
+    .button-theme::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 12px;
+      padding: 3px; /* border thickness */
+      background: transparent;
+      -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none; /* don't block clicks */
+      z-index: -1; /* keep behind text */
+    }
+
+    /* When hover, animate rainbow border */
+    .button-theme:hover::before {
+      background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet,
+        red
+      );
+      background-size: 400% 100%;
+      animation: rainbowBorder 6s linear infinite;
+    }
+
+    /* Border rainbow animation */
+    @keyframes rainbowBorder {
+      0%   { background-position: 0% 50%; }
+      100% { background-position: 400% 50%; }
+    }
+
+    /* Press effect */
+    .button-theme:active {
+      transform: scale(0.98);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+      #shakeMe {
+    width: 150px;
+    height: 150px;
+    background-color: #ff4c4c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 100px auto;
+    border-radius: 20px;
+    position: relative;
+  }
   </style>
 </head>
 <body>
@@ -150,6 +251,11 @@
 
     <hr style="margin: 30px 0; border-color: #4a4a4a;" />
 
+    <!-- Go to profile button -->
+    <button onclick="startCrazyShake()" class="button-theme">Go to my github repo :)<br>(fck this $hit)</button>
+
+    <hr style="margin: 30px 0; border-color: #4a4a4a;" />
+
     <!-- Profile Counter -->
     <p>
       <img
@@ -158,5 +264,24 @@
       />
     </p>
   </div>
+
+  <script>
+    function startCrazyShake() {
+      let interval = setInterval(() => {
+        const x = Math.random() * 40 - 20; // -20 to 20px
+        const y = Math.random() * 40 - 20;
+        const rotate = Math.random() * 10 - 5; // small rotation
+        document.body.style.transform = `translate(${x}px, ${y}px) rotate(${rotate}deg)`;
+      }, 50);
+
+      setTimeout(() => {
+        clearInterval(interval);
+        document.body.style.transform = 'translate(0,0) rotate(0deg)';
+        
+        // Redirect to another page
+        window.location.href = "https://github.com/megsystem"; // replace with your URL
+      }, 5000); // shake for 5 seconds
+    }
+  </script>
 </body>
 </html>
